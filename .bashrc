@@ -76,8 +76,8 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -94,6 +94,7 @@ alias l='ls -CF'
 
 # My custom aliases
 alias kolourpaint='flatpak run org.kde.kolourpaint'
+alias librewolf='flatpak run io.gitlab.librewolf-community'
 alias revolt='flatpak run chat.revolt.RevoltDesktop'
 alias ungoogled-chromium='flatpak run com.github.Eloston.UngoogledChromium'
 alias flatseal='flatpak run com.github.tchx84.flatseal'
